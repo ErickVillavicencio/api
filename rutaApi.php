@@ -779,7 +779,7 @@ else if ($postjson['aksi'] == "proceso_generar_ruta") {
             $ListaDistancia[$i]['longuitud'] = $puntosR[$i]['longuitud'];
             $ListaDistancia[$i]['imagen'] =  $puntosR[$i]['imagen'];
             $ListaDistancia[$i]['idPunto'] = $puntosR[$i]['id'];
-
+            $ListaDistancia[$i]['costo'] = $costo;
             $j = $i + 1;
             if ($j < $longitud) {
                 $lat1 = $puntosR[$i]['latitud'];
@@ -829,7 +829,6 @@ else if ($postjson['aksi'] == "proceso_generar_ruta") {
             $mifecha->modify('+' . $mifecha2->format('s') . 'second');
             $fin = $mifecha->format('H:i:s');
             $ListaDistancia[$i]['finTrayecto'] = $fin;
-            $ListaDistancia[$i]['costo'] = $costo;
             $horafin = $mifecha->format('Y/m/d H:i:s');
 
             if ($i < ($longitud - 1)) {
