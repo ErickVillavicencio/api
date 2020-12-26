@@ -829,6 +829,7 @@ else if ($postjson['aksi'] == "proceso_generar_ruta") {
             $mifecha->modify('+' . $mifecha2->format('s') . 'second');
             $fin = $mifecha->format('H:i:s');
             $ListaDistancia[$i]['finTrayecto'] = $fin;
+            $ListaDistancia[$i]['costo'] = $costo;
             $horafin = $mifecha->format('Y/m/d H:i:s');
 
             if ($i < ($longitud - 1)) {

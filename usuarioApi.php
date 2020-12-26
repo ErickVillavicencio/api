@@ -45,7 +45,6 @@ if($postjson['aksi']=="proceso_registrar"){
 }
     echo $result;
 
-
 }
 
 
