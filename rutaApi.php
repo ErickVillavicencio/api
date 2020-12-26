@@ -960,6 +960,7 @@ else if ($postjson['aksi'] == "proceso_ver_ruta") {
             $ListaDistancia[$i]['longuitud'] = $puntosR[$i]['longuitud'];
             $ListaDistancia[$i]['imagen'] =  $puntosR[$i]['imagen'];
             $ListaDistancia[$i]['idPunto'] = $puntosR[$i]['id'];
+            $ListaDistancia[$i]['costo'] = $costo;
 
             $j = $i + 1;
             if ($j < $longitud) {
