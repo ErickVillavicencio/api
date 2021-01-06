@@ -40,7 +40,7 @@ if($postjson['aksi']=="proceso_registrar"){
         $result = json_encode(array('success'=>true,'msg'=>'Registrado exitosamente'));
     }
     else{
-        $result = json_encode(array('success'=>false,'msg'=>'Registrado exitosamente'));
+        $result = json_encode(array('success'=>false,'msg'=>'Error al registrar'));
     }
 }
     echo $result;
